@@ -1,0 +1,40 @@
+Desligar através do módulo datetime:
+
+MINUTOS:
+
+# FORMA DE DESLIGAR USANDO O MÓDULO DATETIME:
+"""
+minutos = int(input('Digite os minutos para desligar: '))
+
+hora_agora = datetime.datetime.now()
+tempo_somado = datetime.timedelta(minutes=minutos)
+hora_final = hora_agora + tempo_somado
+
+while True:
+    if (datetime.datetime.now().minute == hora_final.minute) and (datetime.datetime.now().second == hora_final.second):
+        if modo == '1':
+            desligar1()
+        else:
+            desligar2()
+        break
+"""
+
+
+HORAS:
+
+# FORMA DE DESLIGAR USANDO O MÓDULO DATETIME:
+"""
+horas = int(input('Digite a quantidade de horas para desligar: '))
+
+hora_agora = datetime.datetime.now()
+tempo_somado = datetime.timedelta(hours=horas)
+hora_final = hora_agora + tempo_somado
+
+while True:
+    if (datetime.datetime.now().hour == hora_final.hour) and (datetime.datetime.now().minute == hora_final.minute):
+        if modo == '1':
+            desligar1()
+        else:
+            desligar2()
+        break
+"""
